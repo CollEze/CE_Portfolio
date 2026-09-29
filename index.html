@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Electrical engineering portfolio of Your Name, featuring projects in circuits, embedded systems, and power electronics.">
+  <title>Your Name | Electrical Engineer</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #172033;
+      --muted: #526078;
+      --accent: #0759c7;
+      --paper: #f5f7fb;
+      --card: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      line-height: 1.6;
+      color: var(--ink);
+      background: var(--paper);
+    }
+    a { color: var(--accent); }
+    a:focus-visible { outline: 3px solid #f2a900; outline-offset: 3px; }
+    .wrap { width: min(100% - 2rem, 1000px); margin-inline: auto; }
+    header { background: var(--card); border-bottom: 1px solid #dce2eb; }
+    .topbar { min-height: 64px; display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; padding-block: .5rem; }
+    .brand { color: var(--ink); font-weight: 750; text-decoration: none; }
+    nav { display: flex; gap: 1rem; flex-wrap: wrap; }
+    nav a { font-size: .95rem; text-decoration: none; }
+    main { padding-block: 3rem; }
+    .hero { padding: 2rem 0 3rem; }
+    .eyebrow { color: var(--accent); font-weight: 700; letter-spacing: .04em; text-transform: uppercase; }
+    h1 { max-width: 760px; margin: .35rem 0 1rem; font-size: clamp(2.2rem, 7vw, 4.2rem); line-height: 1.08; }
+    h2 { margin-top: 0; font-size: clamp(1.6rem, 4vw, 2.2rem); }
+    .intro { max-width: 680px; color: var(--muted); font-size: 1.1rem; }
+    .button { display: inline-block; margin: .5rem .5rem .5rem 0; padding: .7rem 1rem; border: 2px solid var(--accent); border-radius: 8px; font-weight: 700; text-decoration: none; }
+    .button.primary { color: white; background: var(--accent); }
+    section { padding-block: 2rem; scroll-margin-top: 1rem; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 1rem; }
+    .card { padding: 1.25rem; background: var(--card); border: 1px solid #dce2eb; border-radius: 12px; }
+    .card h3 { margin: 0 0 .5rem; }
+    .card p { color: var(--muted); }
+    .tag { display: inline-block; margin: .15rem .25rem .15rem 0; padding: .15rem .55rem; border-radius: 999px; background: #e9effa; font-size: .85rem; }
+    footer { padding-block: 1.5rem; color: var(--muted); background: var(--card); border-top: 1px solid #dce2eb; }
+    @media (max-width: 520px) {
+      .topbar { align-items: flex-start; flex-direction: column; }
+      nav { gap: .7rem; }
+      main { padding-top: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap topbar">
+      <a class="brand" href="#home">Your Name</a>
+      <nav aria-label="Main navigation">
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap" id="home">
+    <section class="hero" aria-labelledby="intro-title">
+      <p class="eyebrow">Electrical Engineer</p>
+      <h1 id="intro-title">I turn electrical ideas into practical solutions.</h1>
+      <p class="intro">I’m Your Name, an electrical engineer interested in [your specialty, such as embedded systems, power electronics, or circuit design]. Here are a few projects that show how I approach engineering challenges.</p>
+      <a class="button primary" href="#projects">View my projects</a>
+      <a class="button" href="resume.pdf">View résumé</a>
+    </section>
+
+    <section id="projects" aria-labelledby="projects-title">
+      <h2 id="projects-title">Selected projects</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Project One: [Project name]</h3>
+          <p><strong>Challenge:</strong> [What needed to be designed or solved?]<br><strong>My contribution:</strong> [What did you personally design, build, test, or analyze?]<br><strong>Result:</strong> [What worked, improved, or was learned?]</p>
+          <span class="tag">[Tool or skill]</span><span class="tag">[Tool or skill]</span>
+        </article>
+        <article class="card">
+          <h3>Project Two: [Project name]</h3>
+          <p><strong>Challenge:</strong> [Briefly describe the engineering problem.]<br><strong>My contribution:</strong> [Describe your role and approach.]<br><strong>Result:</strong> [Add a measurable or concrete outcome, if available.]</p>
+          <span class="tag">[Tool or skill]</span><span class="tag">[Tool or skill]</span>
+        </article>
+        <article class="card">
+          <h3>Project Three: [Project name]</h3>
+          <p><strong>Challenge:</strong> [Briefly describe the engineering problem.]<br><strong>My contribution:</strong> [Describe your role and approach.]<br><strong>Result:</strong> [Add a measurable or concrete outcome, if available.]</p>
+          <span class="tag">[Tool or skill]</span><span class="tag">[Tool or skill]</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" aria-labelledby="skills-title">
+      <h2 id="skills-title">Skills</h2>
+      <div class="card">
+        <p><strong>Engineering:</strong> [Circuit design], [PCB design], [testing], [power systems]</p>
+        <p><strong>Software and tools:</strong> [KiCad], [MATLAB], [LTspice], [Python], [microcontroller platform]</p>
+        <p>Replace these examples with skills and tools you can confidently discuss.</p>
+      </div>
+    </section>
+
+    <section id="about" aria-labelledby="about-title">
+      <h2 id="about-title">About me</h2>
+      <div class="card">
+        <p>[Write two or three sentences about your education, experience, engineering interests, and the kinds of problems you enjoy solving.]</p>
+        <p><strong>Education:</strong> [Degree, school, graduation year]</p>
+      </div>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact</h2>
+      <p>Interested in discussing my work or opportunities? Email me at <a href="mailto:you@example.com">you@example.com</a>.</p>
+      <p><a href="https://www.linkedin.com/">LinkedIn</a> · <a href="https://github.com/CollEze">GitHub</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">© <span id="year"></span> Your Name · Built with HTML and CSS</div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
